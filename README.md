@@ -1,4 +1,4 @@
-# rpi_spi_board
+# Orange pi spi board
 KiCAD project with SPI NOR flash module (W25QXX DataFlash Board) for orange pi/raspberry pi
 
 This board allow you to boot Orange PI directly from SPI Nor flash without SD card.

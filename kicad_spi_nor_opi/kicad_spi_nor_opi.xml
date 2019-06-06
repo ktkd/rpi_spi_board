@@ -2,8 +2,8 @@
 <export version="D">
   <design>
     <source>/home/ktk/Public/rpi_spi_board/kicad_spi_nor_opi/kicad_spi_nor_opi.sch</source>
-    <date>Thu 06 Jun 2019 07:08:49 PM MSK</date>
-    <tool>Eeschema 5.1.2+dfsg1-1</tool>
+    <date>Чт 06 июн 2019 21:39:12</date>
+    <tool>Eeschema 5.1.2-1.fc30</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -23,7 +23,7 @@
       <value>Jumper_wp/hold</value>
       <footprint>Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical</footprint>
       <datasheet>https://static.chipdip.ru/lib/227/DOC000227157.pdf</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_02x03_Row_Letter_First" description="Generic connector, double row, 02x03, row letter first pin numbering scheme (pin number consists of a letter for the row and a number for the pin index in this row. a1, ..., aN; b1, ..., bN), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <libsource lib="Connector_Generic" part="Conn_02x03_Odd_Even" description="Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CF9412F</tstamp>
     </comp>
@@ -31,33 +31,9 @@
       <value>Opi_conn_1</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical</footprint>
       <datasheet>https://static.chipdip.ru/lib/226/DOC000226931.pdf</datasheet>
-      <libsource lib="Connector_Generic" part="Conn_02x04_Row_Letter_First" description="Generic connector, double row, 02x04, row letter first pin numbering scheme (pin number consists of a letter for the row and a number for the pin index in this row. a1, ..., aN; b1, ..., bN), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5CF94F52</tstamp>
-    </comp>
-    <comp ref="R2">
-      <value>R_Small</value>
-      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5CFAB579</tstamp>
-    </comp>
-    <comp ref="D2">
-      <value>GREEN_LED</value>
-      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5CFABAE8</tstamp>
-    </comp>
-    <comp ref="D1">
-      <value>RED_LED</value>
-      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5CFAC70A</tstamp>
     </comp>
     <comp ref="R1">
       <value>R_Small</value>
@@ -65,7 +41,15 @@
       <datasheet>~</datasheet>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5CFB9CEE</tstamp>
+      <tstamp>5CFAB579</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CFABAE8</tstamp>
     </comp>
     <comp ref="U1">
       <value>W25Qxxxx</value>
@@ -77,44 +61,44 @@
     </comp>
   </components>
   <libparts>
-    <libpart lib="Connector_Generic" part="Conn_02x03_Row_Letter_First">
-      <description>Generic connector, double row, 02x03, row letter first pin numbering scheme (pin number consists of a letter for the row and a number for the pin index in this row. a1, ..., aN; b1, ..., bN), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+    <libpart lib="Connector_Generic" part="Conn_02x03_Odd_Even">
+      <description>Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
       <footprints>
         <fp>Connector*:*_2x??_*</fp>
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">Conn_02x03_Row_Letter_First</field>
+        <field name="Value">Conn_02x03_Odd_Even</field>
       </fields>
       <pins>
-        <pin num="a1" name="Pin_a1" type="passive"/>
-        <pin num="a2" name="Pin_a2" type="passive"/>
-        <pin num="a3" name="Pin_a3" type="passive"/>
-        <pin num="b1" name="Pin_b1" type="passive"/>
-        <pin num="b2" name="Pin_b2" type="passive"/>
-        <pin num="b3" name="Pin_b3" type="passive"/>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Connector_Generic" part="Conn_02x04_Row_Letter_First">
-      <description>Generic connector, double row, 02x04, row letter first pin numbering scheme (pin number consists of a letter for the row and a number for the pin index in this row. a1, ..., aN; b1, ..., bN), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+    <libpart lib="Connector_Generic" part="Conn_02x04_Odd_Even">
+      <description>Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
       <footprints>
         <fp>Connector*:*_2x??_*</fp>
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">Conn_02x04_Row_Letter_First</field>
+        <field name="Value">Conn_02x04_Odd_Even</field>
       </fields>
       <pins>
-        <pin num="a1" name="Pin_a1" type="passive"/>
-        <pin num="a2" name="Pin_a2" type="passive"/>
-        <pin num="a3" name="Pin_a3" type="passive"/>
-        <pin num="a4" name="Pin_a4" type="passive"/>
-        <pin num="b1" name="Pin_b1" type="passive"/>
-        <pin num="b2" name="Pin_b2" type="passive"/>
-        <pin num="b3" name="Pin_b3" type="passive"/>
-        <pin num="b4" name="Pin_b4" type="passive"/>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="LED_Small">
@@ -184,59 +168,53 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(J1-Padb3)">
+    <net code="1" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
       <node ref="R1" pin="2"/>
-      <node ref="J1" pin="b3"/>
     </net>
-    <net code="2" name="Net-(J1-Pada2)">
-      <node ref="J1" pin="a2"/>
+    <net code="2" name="Net-(J1-Pad7)">
+      <node ref="U1" pin="6"/>
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="3" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3"/>
       <node ref="U1" pin="5"/>
     </net>
-    <net code="3" name="Net-(J1-Padb1)">
-      <node ref="J1" pin="b1"/>
-      <node ref="R2" pin="2"/>
+    <net code="4" name="GND">
+      <node ref="J1" pin="4"/>
+      <node ref="J2" pin="6"/>
+      <node ref="J2" pin="5"/>
+      <node ref="U1" pin="4"/>
+      <node ref="D1" pin="1"/>
     </net>
-    <net code="4" name="Net-(D1-Pad2)">
+    <net code="5" name="Net-(D1-Pad2)">
       <node ref="D1" pin="2"/>
       <node ref="R1" pin="1"/>
     </net>
-    <net code="5" name="Net-(D2-Pad2)">
-      <node ref="D2" pin="2"/>
-      <node ref="R2" pin="1"/>
-    </net>
-    <net code="6" name="Net-(J1-Pada4)">
-      <node ref="J1" pin="a4"/>
-      <node ref="U1" pin="6"/>
-    </net>
-    <net code="7" name="Net-(J1-Pada3)">
-      <node ref="J1" pin="a3"/>
-      <node ref="U1" pin="2"/>
-    </net>
-    <net code="8" name="Net-(J1-Padb4)">
-      <node ref="U1" pin="1"/>
-      <node ref="J1" pin="b4"/>
-    </net>
-    <net code="9" name="Net-(J2-Padb2)">
-      <node ref="J2" pin="b2"/>
-      <node ref="U1" pin="7"/>
-    </net>
-    <net code="10" name="+5V">
-      <node ref="J1" pin="a1"/>
-      <node ref="J2" pin="a1"/>
-      <node ref="J2" pin="b1"/>
+    <net code="6" name="+5V">
+      <node ref="J1" pin="1"/>
+      <node ref="J2" pin="2"/>
+      <node ref="J2" pin="1"/>
       <node ref="U1" pin="8"/>
     </net>
-    <net code="11" name="Net-(J2-Pada2)">
-      <node ref="U1" pin="3"/>
-      <node ref="J2" pin="a2"/>
+    <net code="7" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6"/>
     </net>
-    <net code="12" name="GND">
-      <node ref="D1" pin="1"/>
-      <node ref="U1" pin="4"/>
-      <node ref="J1" pin="b2"/>
-      <node ref="D2" pin="1"/>
-      <node ref="J2" pin="a3"/>
-      <node ref="J2" pin="b3"/>
+    <net code="8" name="Net-(J1-Pad5)">
+      <node ref="U1" pin="2"/>
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="9" name="Net-(J1-Pad8)">
+      <node ref="U1" pin="1"/>
+      <node ref="J1" pin="8"/>
+    </net>
+    <net code="10" name="Net-(J2-Pad4)">
+      <node ref="J2" pin="4"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="11" name="Net-(J2-Pad3)">
+      <node ref="U1" pin="3"/>
+      <node ref="J2" pin="3"/>
     </net>
   </nets>
 </export>

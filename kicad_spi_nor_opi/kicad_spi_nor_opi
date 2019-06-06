@@ -1,18 +1,6 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    </head>
-    <body>
-    <h1>/home/ktk/Public/rpi_spi_board/kicad_spi_nor_opi/kicad_spi_nor_opi.sch</h1>
-    <p>Thu 06 Jun 2019 07:08:49 PM MSK</p>
-    <p>Eeschema 5.1.2+dfsg1-1</p>
-    <p><b>Component Count:</b>7</p>
-    <table>
-    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Datasheet</th><th>Description</th><th>Vendor</th></tr><tr><td>D1</td><td>1</td><td>RED_LED</td><td>Device:LED_Small</td><td>~</td><td>Light emitting diode, small symbol</td><td></td></tr><tr><td>D2</td><td>1</td><td>GREEN_LED</td><td>Device:LED_Small</td><td>~</td><td>Light emitting diode, small symbol</td><td></td></tr><tr><td>J1</td><td>1</td><td>Opi_conn_1</td><td>Connector_Generic:Conn_02x04_Row_Letter_First</td><td>https://static.chipdip.ru/lib/226/DOC000226931.pdf</td><td>Generic connector, double row, 02x04, row letter first pin numbering scheme (pin number consists of a letter for the row and a number for the pin index in this row. a1, ..., aN; b1, ..., bN), script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr><tr><td>J2</td><td>1</td><td>Jumper_wp/hold</td><td>Connector_Generic:Conn_02x03_Row_Letter_First</td><td>https://static.chipdip.ru/lib/227/DOC000227157.pdf</td><td>Generic connector, double row, 02x03, row letter first pin numbering scheme (pin number consists of a letter for the row and a number for the pin index in this row. a1, ..., aN; b1, ..., bN), script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr><tr><td>R1, R2</td><td>2</td><td>R_Small</td><td>Device:R_Small</td><td>~</td><td>Resistor, small symbol</td><td></td></tr><tr><td>U1</td><td>1</td><td>W25Qxxxx</td><td>Memory_Flash:W25Q32JVSS</td><td>http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf</td><td>32Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8</td><td></td></tr><!--TABLEROW-->
-    </table>
-    </body>
-</html>
-    
+Reference, Value, Footprint, Datasheet
+"J2","Jumper_wp/hold","Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical","https://static.chipdip.ru/lib/227/DOC000227157.pdf"
+"J1","Opi_conn_1","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical","https://static.chipdip.ru/lib/226/DOC000226931.pdf"
+"R1","R_Small","Resistor_SMD:R_0805_2012Metric","~"
+"D1","LED","LED_SMD:LED_0805_2012Metric","~"
+"U1","W25Qxxxx","Package_SO:SOIC-8_5.23x5.23mm_P1.27mm","http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf"

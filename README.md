@@ -3,6 +3,8 @@ SPI NOR flash module (W25QXX DataFlash Board) for orange pi/raspberry pi
 
 This board allows you boot Orange PI directly from SPI Nor flash without SD card.
 
+  for reference (http://linux-sunxi.org/Bootable_SPI_flash)
+
 Components:
 ```
 SPI flash SOIC-8 25 series (for examble 25q08 and above)

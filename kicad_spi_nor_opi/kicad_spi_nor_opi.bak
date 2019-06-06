@@ -14,18 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Memory_Flash:W25Q32JVSS U1
-U 1 1 5CF92F74
-P 5650 4150
-F 0 "U1" H 5650 4731 50  0000 C CNN
-F 1 "W25Qxxxx" H 5650 4640 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 5650 4150 50  0001 C CNN
-F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 5650 4150 50  0001 C CNN
-	1    5650 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Row_Letter_First J2
+L Connector_Generic:Conn_02x03_Odd_Even J2
 U 1 1 5CF9412F
 P 6850 3850
 F 0 "J2" H 6900 4167 50  0000 C CNN
@@ -36,7 +25,7 @@ F 3 "https://static.chipdip.ru/lib/227/DOC000227157.pdf" H 6850 3850 50  0001 C 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x04_Row_Letter_First J1
+L Connector_Generic:Conn_02x04_Odd_Even J1
 U 1 1 5CF94F52
 P 4200 4100
 F 0 "J1" H 4250 4417 50  0000 C CNN
@@ -47,13 +36,9 @@ F 3 "https://static.chipdip.ru/lib/226/DOC000226931.pdf" H 4200 4100 50  0001 C 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 3750 4000 4000
-Wire Wire Line
 	6150 3950 6150 3600
 Wire Wire Line
 	6150 3600 3900 3600
-Wire Wire Line
-	3900 3600 3900 4100
 Wire Wire Line
 	3900 4100 4000 4100
 Wire Wire Line
@@ -81,14 +66,6 @@ Wire Wire Line
 Wire Wire Line
 	4800 4300 4500 4300
 Wire Wire Line
-	5650 4550 4700 4550
-Wire Wire Line
-	4700 4550 4700 4100
-Wire Wire Line
-	4700 4100 4500 4100
-Wire Wire Line
-	4000 3750 4650 3750
-Wire Wire Line
 	6150 4250 6450 4250
 Wire Wire Line
 	6450 4250 6450 3850
@@ -111,29 +88,125 @@ Wire Wire Line
 Wire Wire Line
 	6650 4050 6900 4050
 Wire Wire Line
-	5650 4550 6900 4550
-Wire Wire Line
 	6900 4550 6900 4050
-Connection ~ 5650 4550
 Connection ~ 6900 4050
 Wire Wire Line
 	6900 4050 7150 4050
 Wire Wire Line
 	6650 3750 6400 3750
 Wire Wire Line
-	6400 3750 6400 3400
-Wire Wire Line
-	6400 3400 4650 3400
-Wire Wire Line
-	4650 3400 4650 3750
-Connection ~ 4650 3750
-Wire Wire Line
-	4650 3750 5650 3750
-Wire Wire Line
 	7150 3750 7300 3750
+$Comp
+L Device:R_Small R1
+U 1 1 5CFAB579
+P 7750 4050
+F 0 "R1" H 7691 4004 50  0000 R CNN
+F 1 "R_Small" H 7691 4095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7750 4050 50  0001 C CNN
+F 3 "~" H 7750 4050 50  0001 C CNN
+	1    7750 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D1
+U 1 1 5CFABAE8
+P 7750 4450
+F 0 "D1" V 7796 4382 50  0000 R CNN
+F 1 "LED" V 7705 4382 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 7750 4450 50  0001 C CNN
+F 3 "~" V 7750 4450 50  0001 C CNN
+	1    7750 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7750 4350 7750 4150
+Wire Wire Line
+	7750 3950 7750 3300
+Wire Wire Line
+	7750 3300 4550 3300
+Wire Wire Line
+	4550 3300 4550 4000
+Wire Wire Line
+	4550 4000 4500 4000
+$Comp
+L power:GND #PWR0101
+U 1 1 5CFC53F1
+P 4700 4100
+F 0 "#PWR0101" H 4700 3850 50  0001 C CNN
+F 1 "GND" H 4705 3927 50  0000 C CNN
+F 2 "" H 4700 4100 50  0001 C CNN
+F 3 "" H 4700 4100 50  0001 C CNN
+	1    4700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5CFC76FE
+P 5650 4550
+F 0 "#PWR0102" H 5650 4300 50  0001 C CNN
+F 1 "GND" H 5655 4377 50  0000 C CNN
+F 2 "" H 5650 4550 50  0001 C CNN
+F 3 "" H 5650 4550 50  0001 C CNN
+	1    5650 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4100 4500 4100
+Wire Wire Line
+	3900 3600 3900 4100
+$Comp
+L Memory_Flash:W25Q32JVSS U1
+U 1 1 5CF92F74
+P 5650 4150
+F 0 "U1" H 5650 4731 50  0000 C CNN
+F 1 "W25Qxxxx" H 5650 4640 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 5650 4150 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 5650 4150 50  0001 C CNN
+	1    5650 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3400 6750 3400
 Wire Wire Line
 	7300 3750 7300 3400
 Wire Wire Line
-	7300 3400 6400 3400
-Connection ~ 6400 3400
+	6400 3750 6400 3400
+Wire Wire Line
+	4000 3750 4000 4000
+Wire Wire Line
+	6900 4550 5650 4550
+Connection ~ 6900 4550
+Connection ~ 5650 4550
+Wire Wire Line
+	4000 3750 4700 3750
+$Comp
+L power:+5V #PWR0103
+U 1 1 5CFDBD07
+P 4700 3750
+F 0 "#PWR0103" H 4700 3600 50  0001 C CNN
+F 1 "+5V" H 4715 3923 50  0000 C CNN
+F 2 "" H 4700 3750 50  0001 C CNN
+F 3 "" H 4700 3750 50  0001 C CNN
+	1    4700 3750
+	-1   0    0    1   
+$EndComp
+Connection ~ 4700 3750
+Wire Wire Line
+	4700 3750 5650 3750
+$Comp
+L power:+5V #PWR0104
+U 1 1 5CFDC17A
+P 6750 3400
+F 0 "#PWR0104" H 6750 3250 50  0001 C CNN
+F 1 "+5V" H 6765 3573 50  0000 C CNN
+F 2 "" H 6750 3400 50  0001 C CNN
+F 3 "" H 6750 3400 50  0001 C CNN
+	1    6750 3400
+	-1   0    0    1   
+$EndComp
+Connection ~ 6750 3400
+Wire Wire Line
+	6750 3400 6400 3400
+Wire Wire Line
+	6900 4550 7750 4550
 $EndSCHEMATC

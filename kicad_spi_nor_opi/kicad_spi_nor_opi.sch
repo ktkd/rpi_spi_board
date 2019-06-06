@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:kicad_spi_nor_opi-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -92,10 +93,6 @@ Wire Wire Line
 Connection ~ 6900 4050
 Wire Wire Line
 	6900 4050 7150 4050
-Wire Wire Line
-	6650 3750 6400 3750
-Wire Wire Line
-	7150 3750 7300 3750
 $Comp
 L Device:R_Small R1
 U 1 1 5CFAB579
@@ -131,27 +128,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0101
 U 1 1 5CFC53F1
-P 4700 4100
-F 0 "#PWR0101" H 4700 3850 50  0001 C CNN
-F 1 "GND" H 4705 3927 50  0000 C CNN
-F 2 "" H 4700 4100 50  0001 C CNN
-F 3 "" H 4700 4100 50  0001 C CNN
-	1    4700 4100
-	1    0    0    -1  
+P 4500 4100
+F 0 "#PWR0101" H 4500 3850 50  0001 C CNN
+F 1 "GND" H 4505 3927 50  0000 C CNN
+F 2 "" H 4500 4100 50  0001 C CNN
+F 3 "" H 4500 4100 50  0001 C CNN
+	1    4500 4100
+	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5CFC76FE
-P 5650 4550
-F 0 "#PWR0102" H 5650 4300 50  0001 C CNN
-F 1 "GND" H 5655 4377 50  0000 C CNN
-F 2 "" H 5650 4550 50  0001 C CNN
-F 3 "" H 5650 4550 50  0001 C CNN
-	1    5650 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 4100 4500 4100
 Wire Wire Line
 	3900 3600 3900 4100
 $Comp
@@ -166,17 +150,7 @@ F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7300 3400 6750 3400
-Wire Wire Line
-	7300 3750 7300 3400
-Wire Wire Line
-	6400 3750 6400 3400
-Wire Wire Line
 	4000 3750 4000 4000
-Wire Wire Line
-	6900 4550 5650 4550
-Connection ~ 6900 4550
-Connection ~ 5650 4550
 Wire Wire Line
 	4000 3750 4700 3750
 $Comp
@@ -193,20 +167,46 @@ $EndComp
 Connection ~ 4700 3750
 Wire Wire Line
 	4700 3750 5650 3750
-$Comp
-L power:+5V #PWR0104
-U 1 1 5CFDC17A
-P 6750 3400
-F 0 "#PWR0104" H 6750 3250 50  0001 C CNN
-F 1 "+5V" H 6765 3573 50  0000 C CNN
-F 2 "" H 6750 3400 50  0001 C CNN
-F 3 "" H 6750 3400 50  0001 C CNN
-	1    6750 3400
-	-1   0    0    1   
-$EndComp
-Connection ~ 6750 3400
-Wire Wire Line
-	6750 3400 6400 3400
 Wire Wire Line
 	6900 4550 7750 4550
+NoConn ~ 4500 4200
+$Comp
+L power:+5V #PWR0105
+U 1 1 5CF977B0
+P 6650 3750
+F 0 "#PWR0105" H 6650 3600 50  0001 C CNN
+F 1 "+5V" V 6665 3878 50  0000 L CNN
+F 2 "" H 6650 3750 50  0001 C CNN
+F 3 "" H 6650 3750 50  0001 C CNN
+	1    6650 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5CF9897B
+P 7150 3750
+F 0 "#PWR0104" H 7150 3600 50  0001 C CNN
+F 1 "+5V" V 7165 3878 50  0000 L CNN
+F 2 "" H 7150 3750 50  0001 C CNN
+F 3 "" H 7150 3750 50  0001 C CNN
+	1    7150 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 4550 5650 4550
+Connection ~ 6900 4550
+$Comp
+L power:GND #PWR0102
+U 1 1 5CF9F0CB
+P 5550 4550
+F 0 "#PWR0102" H 5550 4300 50  0001 C CNN
+F 1 "GND" H 5555 4377 50  0000 C CNN
+F 2 "" H 5550 4550 50  0001 C CNN
+F 3 "" H 5550 4550 50  0001 C CNN
+	1    5550 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4550 5550 4550
+Connection ~ 5650 4550
 $EndSCHEMATC

@@ -1,0 +1,139 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Memory_Flash:W25Q32JVSS U1
+U 1 1 5CF92F74
+P 5650 4150
+F 0 "U1" H 5650 4731 50  0000 C CNN
+F 1 "W25Qxxxx" H 5650 4640 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 5650 4150 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 5650 4150 50  0001 C CNN
+	1    5650 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Row_Letter_First J2
+U 1 1 5CF9412F
+P 6850 3850
+F 0 "J2" H 6900 4167 50  0000 C CNN
+F 1 "Jumper_wp/hold" H 6900 4076 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 6850 3850 50  0001 C CNN
+F 3 "https://static.chipdip.ru/lib/227/DOC000227157.pdf" H 6850 3850 50  0001 C CNN
+	1    6850 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Row_Letter_First J1
+U 1 1 5CF94F52
+P 4200 4100
+F 0 "J1" H 4250 4417 50  0000 C CNN
+F 1 "Opi_conn_1" H 4250 4326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 4200 4100 50  0001 C CNN
+F 3 "https://static.chipdip.ru/lib/226/DOC000226931.pdf" H 4200 4100 50  0001 C CNN
+	1    4200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3750 4000 4000
+Wire Wire Line
+	6150 3950 6150 3600
+Wire Wire Line
+	6150 3600 3900 3600
+Wire Wire Line
+	3900 3600 3900 4100
+Wire Wire Line
+	3900 4100 4000 4100
+Wire Wire Line
+	6150 4050 6300 4050
+Wire Wire Line
+	6300 4050 6300 3450
+Wire Wire Line
+	6300 3450 3750 3450
+Wire Wire Line
+	3750 3450 3750 4200
+Wire Wire Line
+	3750 4200 4000 4200
+Wire Wire Line
+	4000 4300 4000 4400
+Wire Wire Line
+	4000 4400 4900 4400
+Wire Wire Line
+	4900 4400 4900 4250
+Wire Wire Line
+	4900 4250 5150 4250
+Wire Wire Line
+	5150 4050 4800 4050
+Wire Wire Line
+	4800 4050 4800 4300
+Wire Wire Line
+	4800 4300 4500 4300
+Wire Wire Line
+	5650 4550 4700 4550
+Wire Wire Line
+	4700 4550 4700 4100
+Wire Wire Line
+	4700 4100 4500 4100
+Wire Wire Line
+	4000 3750 4650 3750
+Wire Wire Line
+	6150 4250 6450 4250
+Wire Wire Line
+	6450 4250 6450 3850
+Wire Wire Line
+	6450 3850 6650 3850
+Wire Wire Line
+	6150 4350 6550 4350
+Wire Wire Line
+	6550 4350 6550 4100
+Wire Wire Line
+	6550 4100 7300 4100
+Wire Wire Line
+	7300 4100 7300 3850
+Wire Wire Line
+	7300 3850 7150 3850
+Wire Wire Line
+	6650 3950 6650 4050
+Wire Wire Line
+	7150 4050 7150 3950
+Wire Wire Line
+	6650 4050 6900 4050
+Wire Wire Line
+	5650 4550 6900 4550
+Wire Wire Line
+	6900 4550 6900 4050
+Connection ~ 5650 4550
+Connection ~ 6900 4050
+Wire Wire Line
+	6900 4050 7150 4050
+Wire Wire Line
+	6650 3750 6400 3750
+Wire Wire Line
+	6400 3750 6400 3400
+Wire Wire Line
+	6400 3400 4650 3400
+Wire Wire Line
+	4650 3400 4650 3750
+Connection ~ 4650 3750
+Wire Wire Line
+	4650 3750 5650 3750
+Wire Wire Line
+	7150 3750 7300 3750
+Wire Wire Line
+	7300 3750 7300 3400
+Wire Wire Line
+	7300 3400 6400 3400
+Connection ~ 6400 3400
+$EndSCHEMATC

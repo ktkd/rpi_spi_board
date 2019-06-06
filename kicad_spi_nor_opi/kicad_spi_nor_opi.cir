@@ -1,0 +1,9 @@
+.title KiCad schematic
+J2 +5V Net-_J2-Pada2_ GND +5V Net-_J2-Padb2_ GND Jumper_wp/hold
+J1 +5V Net-_J1-Pada2_ Net-_J1-Pada3_ Net-_J1-Pada4_ Net-_J1-Padb1_ GND Net-_J1-Padb3_ Net-_J1-Padb4_ Opi_conn_1
+R2 Net-_D2-Pad2_ Net-_J1-Padb1_ R_Small
+D2 GND Net-_D2-Pad2_ GREEN_LED
+D1 GND Net-_D1-Pad2_ RED_LED
+R1 Net-_D1-Pad2_ Net-_J1-Padb3_ R_Small
+U1 Net-_J1-Padb4_ Net-_J1-Pada3_ Net-_J2-Pada2_ GND Net-_J1-Pada2_ Net-_J1-Pada4_ Net-_J2-Padb2_ +5V W25Qxxxx
+.end

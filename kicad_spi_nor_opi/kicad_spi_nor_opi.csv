@@ -1,0 +1,6 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"J2";"PinSocket_2x03_P2.54mm_Vertical";1;"Jumper_wp/hold";;;
+2;"J1";"PinHeader_2x04_P2.54mm_Vertical";1;"Opi_conn_1";;;
+3;"D1";"LED_0805_2012Metric";1;"LED";;;
+4;"U1";"SOIC-8_5.23x5.23mm_P1.27mm";1;"W25Qxxxx";;;
+5;"R1";"R_0805_2012Metric";1;"R_Small";;;

@@ -19,3 +19,5 @@ connect board to red pins (pins 17-24 onboard SPI0)
 
 
 ![pinout](https://github.com/ktkd/rpi_spi_board/raw/master/kicad_spi_nor_opi.png)
+
+![pinout](https://github.com/ktkd/rpi_spi_board/raw/master/photo_boards.jpg)

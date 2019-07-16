@@ -6,7 +6,7 @@ This board allow you to boot Orange PI directly from SPI Nor flash without SD ca
   for reference (http://linux-sunxi.org/Bootable_SPI_flash)
 
 
-sunxi-fel output from orange pi pc and this board with 25q16 spi chip
+sunxi-fel output from orange pi pc and this board with 25q16 spi chip:
 ```
 $ ./sunxi-fel spiflash-info
 Manufacturer: Unknown (C8h), model: 40h, size: 2097152 bytes.
